@@ -1,0 +1,59 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+/* 游戏界面 */
+.main {
+	background-color: #000;
+	width: 360px;
+	height: 420px;
+	box-sizing: border-box;
+	border: 10px solid rgb(58, 5, 5);
+	margin: 100px auto;
+	border-radius: 36px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+/* 游戏舞台区域 */
+.stage {
+	width: 304px;
+	height: 304px;
+	box-sizing: border-box;
+	border: 2px solid rgb(54, 3, 3);
+	position: relative;
+}
+/* 游戏计分区域 */
+.ScorePanel {
+	font: bold 20px 'Courier';
+	color: #fff;
+	width: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.snake div {
+	width: 10px;
+	height: 10px;
+	box-sizing: border-box;
+	border: 1px solid #000;
+	background-color: #fff;
+	position: absolute;
+}
+.food {
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	width: 10px;
+	height: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.food div {
+	width: 5px;
+	height: 5px;
+	background-color: #fff;
+	transform: rotate(45deg);
+}
